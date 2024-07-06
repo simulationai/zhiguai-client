@@ -1,0 +1,45 @@
+ .carousel {
+     display: flex;
+     position: relative;
+     width: 705px;
+     margin: 50px auto;
+     overflow: hidden;
+ }
+
+ .carousel-wrapper {
+     perspective: 1000px;
+     width: 100%;
+     height: 700px;
+ }
+
+ .carousel-item {
+     position: absolute;
+     left: calc(50% - 150px);
+     width: 300px;
+     height: 100%;
+     user-select: none;
+     transition: all 0.4s ease;
+ }
+
+ .indicator {
+     position: absolute;
+     top: calc(50% - 25px);
+     width: 50px;
+     height: 50px;
+     line-height: 50px;
+     text-align: center;
+     border: 1px solid;
+     z-index: 999;
+     border-radius: 50%;
+     font-size: 25px;
+     cursor: pointer;
+     user-select: none;
+ }
+
+ .prev {
+     left: 0;
+ }
+
+ .next {
+     right: 0;
+ }

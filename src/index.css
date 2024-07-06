@@ -1,13 +1,35 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  /* font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  -moz-osx-font-smoothing: grayscale; */
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+@font-face {
+  font-family: 'YuGong';
+  src: url('../public/fonts/新愚公迷茫体.ttf') format('truetype');
 }
+
+
+
+.yugong {
+  font-family: "YuGong"
+}
+
+body {
+  font-family: 'YuGong', sans-serif;
+}
+
+* {
+  user-select: none
+}
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
